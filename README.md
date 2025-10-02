@@ -1,4 +1,4 @@
-# DAILY-WEATHER-ETL-PIPELINE-
+# Automated Weather Data ETL Pipeline
 A data engineering project demonstrating a daily automated ETL process. Extracts weather data via API, transforms with Python/PandAS, and stores it in a SQL database.
 
 ## 📜 Project Overview
