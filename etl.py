@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 from sqlalchemy import create_engine
 from datetime import datetime
+import sqlite3
 
 # =============================================================================
 # --- 1. EXTRACT ---
@@ -64,7 +65,7 @@ try:
     # Create a connection engine to your PostgreSQL database.
     # Format: postgresql://[user]:[password]@[host]:[port]/[database]
     # **REPLACE 'your_password' with your actual PostgreSQL password**
-    engine = create_engine('postgresql://postgres:Prem%4022@localhost:5432/api_data')
+    engine = create_engine('postgresql://postgres:Pdxxxx@localhost:5432/api_data')
     
     # Load the DataFrame into the 'weather_data' table.
     # 'if_exists='append'' means we will add new rows, not overwrite the table.
@@ -72,4 +73,5 @@ try:
     
     print("Data loaded successfully into the 'weather_data' table!")
 except Exception as e:
+
     print(f"Data load failed: {e}")
